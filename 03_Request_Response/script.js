@@ -3,6 +3,7 @@ const PORT = 3000;
 
 const server = http.createServer((req, res) => {
   console.log(req);
+  process.exit(); // stop the server after logged the request
 });
 
 server.listen(PORT, () => {

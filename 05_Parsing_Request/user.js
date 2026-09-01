@@ -38,8 +38,17 @@ const server = http.createServer((req, res) => {
     req.on("end", () => {
       const parsedBody = Buffer.concat(body).toString();
       console.log(parsedBody);
+      const params = new URLSearchParams(parsedBody);
+
+      //   const jsonObject = {};
+      //   for (const [key, val] of params.entries()) {
+      //     jsonObject[key] = val;
+      //   }
+      const jsonObject = Object.fromEntries(params);
+      const jsonString = JSON.stringify(jsonObject);
+      console.log(jsonString);
+      fs.writeFileSync("./05_Parsing_Request/user.txt", jsonString);
     });
-    fs.writeFileSync("./05_Parsing_Request/user.txt", "Alfat Tasnim Hasan");
     res.statusCode = 302;
     res.setHeader("Location", "/");
   }

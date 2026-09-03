@@ -1,0 +1,16 @@
+{
+  "name": "11_error_and_debug",
+  "version": "1.0.0",
+  "description": "error and debugging check",
+  "license": "ISC",
+  "author": "Alfat Tasnim Hasan",
+  "type": "commonjs",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon script.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

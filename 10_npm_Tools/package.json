@@ -1,0 +1,17 @@
+{
+  "name": "10_npm_tools",
+  "version": "1.0.0",
+  "description": "This is a test project for npm and npm-related tools, running locally on localhost.",
+  "license": "ISC",
+  "author": "Alfat Tasnim Hasan",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "Alfat": "nodemon app.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

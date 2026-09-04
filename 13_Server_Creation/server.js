@@ -20,7 +20,20 @@ const server = http.createServer((req, res) => {
 
   const contentType = mimeType[extName] || "application/octet-stream";
 
-  
+  fs.readFile(filePath, (err, content) => {
+    if (err) {
+      if (err.code === "ENOENT") {
+        res.writeHead(400, { "Content-Type": "text/html" });
+        res.end(`404 : page not found!`);
+      } else {
+        res.writeHead(500);
+        res.end(`server error : ${err.code}`);
+      }
+    } else {
+      res.writeHead(200, { "Content-Type": contentType });
+      res.end(content, "utf-8");
+    }
+  });
 });
 
 server.listen(PORT, () => {

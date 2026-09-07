@@ -1,8 +1,9 @@
 const express = require("express");
+
 const PORT = 3000;
 
 const app = express();
 
-app.listen(() => {
+app.listen(PORT, () => {
   console.log(`server running at http://localhost:${PORT}`);
 });

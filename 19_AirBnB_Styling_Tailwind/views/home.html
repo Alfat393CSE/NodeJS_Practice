@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link href="/output.css" rel="stylesheet" />
+  </head>
+  <body class="min-h-screen bg-slate-950 text-white">
+    <main
+      class="relative flex min-h-screen items-center justify-center overflow-hidden px-6"
+    >
+      <!-- Background Glow -->
+      <div
+        class="absolute -left-24 -top-24 h-80 w-80 rounded-full bg-blue-600/20 blur-3xl"
+      ></div>
+      <div
+        class="absolute -bottom-24 -right-24 h-80 w-80 rounded-full bg-purple-600/20 blur-3xl"
+      ></div>
+      <!-- Main Card -->
+      <section
+        class="relative z-10 w-full max-w-2xl rounded-3xl border border-white/10 bg-white/5 p-10 text-center shadow-2xl backdrop-blur-xl sm:p-14"
+      >
+        <!-- Icon -->
+        <div
+          class="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-2xl border border-blue-400/20 bg-blue-500/10 text-4xl"
+        >
+          🏠
+        </div>
+        <!-- Heading -->
+        <h1
+          class="bg-linear-to-r from-blue-400 via-cyan-400 to-purple-500 bg-clip-text text-4xl font-black tracking-tight text-transparent sm:text-5xl"
+        >
+          Welcome to Airbnb
+        </h1>
+        <!-- Description -->
+        <p
+          class="mx-auto mt-5 max-w-lg text-sm leading-7 text-slate-400 sm:text-base"
+        >
+          Find your perfect place to stay. Explore comfortable homes, beautiful
+          locations, and unforgettable experiences.
+        </p>
+        <!-- Button -->
+        <div class="mt-8">
+          <a
+            href="/user/submit-detailes"
+            class="inline-flex items-center gap-2 rounded-xl bg-blue-600 px-7 py-3 font-semibold text-white shadow-lg shadow-blue-600/20 transition-all duration-300 hover:-translate-y-1 hover:bg-blue-500 hover:shadow-xl hover:shadow-blue-500/30 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-slate-950"
+          >
+            Go to Form <span class="text-lg">→</span>
+          </a>
+        </div>
+        <!-- Footer Text -->
+        <p class="mt-8 text-xs uppercase tracking-widest text-slate-600">
+          Find • Stay • Explore
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

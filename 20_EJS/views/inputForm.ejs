@@ -1,0 +1,82 @@
+<%- include("partials/head") %>
+  </head>
+  <body class="min-h-screen bg-slate-950 text-slate-100">
+    <%- include("partials/nav") %>
+    <!-- Form -->
+    <main
+      class="flex min-h-[calc(100vh-137px)] items-center justify-center px-6 py-12"
+    >
+      <div
+        class="w-full max-w-lg rounded-2xl border border-slate-800 bg-slate-900 p-8 shadow-xl"
+      >
+        <!-- Heading -->
+        <div class="mb-8">
+          <p
+            class="text-sm font-medium uppercase tracking-widest text-indigo-400"
+          >
+            House Details
+          </p>
+          <h1 class="mt-2 text-3xl font-bold text-white">
+            Submit Your Details
+          </h1>
+          <p class="mt-2 text-slate-400">Enter your house information below.</p>
+        </div>
+        <!-- Form -->
+        <form action="/user/submit-detailes" method="post" class="space-y-6">
+          <div>
+            <label
+              for="houseName"
+              class="mb-2 block text-sm font-medium text-slate-300"
+            >
+              House Name
+            </label>
+            <input
+              type="text"
+              id="houseName"
+              name="houseName"
+              placeholder="Enter your house name"
+              class="w-full mb-2 rounded-lg border border-slate-700 bg-slate-950 px-4 py-3 text-white outline-none placeholder:text-slate-600 transition focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20"
+              required
+            />
+            <input
+              type="text"
+              id="houseName"
+              name="price"
+              placeholder="Enter your house price"
+              class="w-full mb-2 rounded-lg border border-slate-700 bg-slate-950 px-4 py-3 text-white outline-none placeholder:text-slate-600 transition focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20"
+              required
+            />
+            <input
+              type="text"
+              id="houseName"
+              name="rating"
+              placeholder="Enter your house rating"
+              class="w-full mb-2 rounded-lg border border-slate-700 bg-slate-950 px-4 py-3 text-white outline-none placeholder:text-slate-600 transition focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20"
+              required
+            />
+            <input
+              type="text"
+              id="houseName"
+              name="image"
+              placeholder="Enter your house image"
+              class="w-full mb-2 rounded-lg border border-slate-700 bg-slate-950 px-4 py-3 text-white outline-none placeholder:text-slate-600 transition focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20"
+              required
+            />
+          </div>
+          <button
+            type="submit"
+            class="w-full rounded-xl bg-indigo-500 px-6 py-3 font-semibold text-white shadow-lg shadow-indigo-500/20 transition hover:bg-indigo-400"
+          >
+            Submit Details
+          </button>
+        </form>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer
+      class="border-t border-slate-800 py-6 text-center text-sm text-slate-500"
+    >
+      © 2026 Alfat. All rights reserved.
+    </footer>
+  </body>
+</html>

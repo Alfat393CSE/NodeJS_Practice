@@ -1,0 +1,54 @@
+<%- include("partials/head") %>
+<body class="min-h-screen bg-slate-950 text-white">
+  <%- include("partials/nav") %>
+
+  <main class="mx-auto max-w-5xl px-6 py-12">
+
+    <div class="mb-8">
+      <h2 class="text-2xl font-semibold tracking-tight">
+        Users
+      </h2>
+
+      <p class="mt-1 text-sm text-slate-400">
+        Recently submitted user details
+      </p>
+    </div>
+
+    <ul class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+
+      <% user.forEach((val) => { %>
+
+        <li
+          class="rounded-xl border border-slate-800 bg-slate-900 p-5 transition hover:border-slate-700 hover:bg-slate-800"
+        >
+
+          <h3 class="mb-4 text-lg font-medium">
+            <%= val.name %>
+          </h3>
+
+          <div class="space-y-2 text-sm">
+
+            <p class="text-slate-400">
+              <span class="text-slate-500">Email:</span>
+              <span class="text-slate-200"><%= val.email %></span>
+            </p>
+
+            <p class="text-slate-400">
+              <span class="text-slate-500">Contact:</span>
+              <span class="text-slate-200"><%= val.contact %></span>
+            </p>
+
+          </div>
+
+        </li>
+
+      <% }) %>
+
+    </ul>
+
+  </main>
+
+</body>
+
+
+</html>

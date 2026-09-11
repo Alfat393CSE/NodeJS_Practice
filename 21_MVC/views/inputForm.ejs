@@ -1,0 +1,99 @@
+<%- include("partials/head") %>
+<body class="min-h-screen bg-slate-950 text-white">
+<%- include("partials/nav") %>
+  <!-- Main -->
+  <main class="flex min-h-[calc(100vh-73px)] items-center justify-center px-6 py-12">
+
+    <div class="w-full max-w-md">
+
+      <!-- Heading -->
+      <div class="mb-8">
+        <h1 class="text-2xl font-semibold tracking-tight">
+          Add User
+        </h1>
+
+        <p class="mt-2 text-sm text-slate-400">
+          Submit your information below.
+        </p>
+      </div>
+
+      <!-- Form -->
+      <form
+        action="/user/submit-detailes"
+        method="post"
+        class="space-y-5 rounded-xl border border-slate-800 bg-slate-900 p-6"
+      >
+
+        <!-- Name -->
+        <div>
+          <label
+            for="name"
+            class="mb-2 block text-sm font-medium text-slate-300"
+          >
+            Name
+          </label>
+
+          <input
+            id="name"
+            type="text"
+            name="name"
+            placeholder="Enter your name"
+            required
+            class="w-full rounded-lg border border-slate-700 bg-slate-950 px-4 py-3 text-sm text-white outline-none placeholder:text-slate-600 transition focus:border-slate-500"
+          />
+        </div>
+
+        <!-- Email -->
+        <div>
+          <label
+            for="email"
+            class="mb-2 block text-sm font-medium text-slate-300"
+          >
+            Email
+          </label>
+
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+            class="w-full rounded-lg border border-slate-700 bg-slate-950 px-4 py-3 text-sm text-white outline-none placeholder:text-slate-600 transition focus:border-slate-500"
+          />
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <label
+            for="contact"
+            class="mb-2 block text-sm font-medium text-slate-300"
+          >
+            Contact Number
+          </label>
+
+          <input
+            id="contact"
+            type="tel"
+            name="contact"
+            placeholder="Enter your contact number"
+            required
+            class="w-full rounded-lg border border-slate-700 bg-slate-950 px-4 py-3 text-sm text-white outline-none placeholder:text-slate-600 transition focus:border-slate-500"
+          />
+        </div>
+
+        <!-- Submit -->
+        <button
+          type="submit"
+          class="w-full rounded-lg bg-white px-4 py-3 text-sm font-medium text-slate-950 transition hover:bg-slate-200"
+        >
+          Submit Information
+        </button>
+
+      </form>
+
+    </div>
+
+  </main>
+
+</body>
+</html>
